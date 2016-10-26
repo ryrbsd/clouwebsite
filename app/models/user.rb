@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   
   # serialize :authority, Array
   def hashmap
-      { '产品' => 'Category, Type, Product, PopProduct','新闻' => 'CompanyNews, IndustryNews, SpecialNewsOne, SpecialNewsTwo, Honor', 
+      { '产品' => 'Category, Type, Product, PopProduct','新闻' => 'CompanyNews, IndustryNews, SpecialNewsOne, SpecialNewsTwo, Honor, Clounewspapers', 
       '投资者关系' => 'Announcement, YearReport', '客户服务' => 'CaseType, ServiceCase, QType, QandA, Trouble, Complain', 
       '人力资源' => 'SocietyRecuritment, CampusRecuritment, EmployeeStory', '行业新闻' => 'IndustryNews' , '用户/管理员' => 'User', 
       '问题类型' => 'QType', '投标' => 'Bid'}
