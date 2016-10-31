@@ -15,7 +15,7 @@ class Clounewspapers < ActiveRecord::Base
              required true 
             end
             field :image, :carrierwave do
-                label "图片"
+                label "封面图片"
             end
             field :attachment, :carrierwave do
                 label "附件"

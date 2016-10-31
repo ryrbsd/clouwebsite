@@ -38,7 +38,7 @@ class CompanyNews < ActiveRecord::Base
             label "梗概"
           end
           field :image, :carrierwave do
-            label "封面"
+            label "封面图片"
           end
           field :Authorized do
             label "已审核"
@@ -68,7 +68,7 @@ class CompanyNews < ActiveRecord::Base
             label "视频链接"
           end
           field :image, :carrierwave do
-            label "封面"
+            label "封面图片"
           end
           field :Authorized do
             label '审核'
