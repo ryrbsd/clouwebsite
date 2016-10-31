@@ -5,7 +5,7 @@ server '58.251.74.101', port: 9999, roles: [:web, :app, :db], primary: true
 
 
 set :application, 'clouwebsite'
-set :repo_url, 'https://github.com/xyixyi/clouwebsite.git'
+set :repo_url, 'https://github.com/ryrbsd/clouwebsite.git'
 set :user,            'root'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
