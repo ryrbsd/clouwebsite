@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161017004113) do
+ActiveRecord::Schema.define(version: 20161223065333) do
 
   create_table "announcements", force: :cascade do |t|
     t.datetime "date"
@@ -108,10 +108,13 @@ ActiveRecord::Schema.define(version: 20161017004113) do
     t.string   "name"
     t.string   "email"
     t.string   "phonenumber"
-    t.boolean  "solved",      default: false
+    t.boolean  "solved",        default: false
     t.string   "text"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.string   "complain_type"
+    t.string   "solve_method"
+    t.string   "solve_people"
   end
 
   create_table "employee_stories", force: :cascade do |t|
@@ -272,10 +275,15 @@ ActiveRecord::Schema.define(version: 20161017004113) do
     t.string   "name"
     t.string   "email"
     t.string   "phonenumber"
-    t.boolean  "solved",      default: false
+    t.boolean  "solved",           default: false
     t.string   "text"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.string   "customer_company"
+    t.string   "customer_address"
+    t.string   "contract_id"
+    t.string   "product_type"
+    t.string   "product_id"
   end
 
   create_table "types", force: :cascade do |t|
