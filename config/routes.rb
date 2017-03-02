@@ -136,6 +136,8 @@ Rails.application.routes.draw do
   
   get 'servicecontact' => 'service_cases#servicecontact', :format => false
   
+  get 'clounewspapers' => 'clounewspapers#index', :format => false
+  
   # get '/leaders' => 'about_us#leaders', :format => false
   get "search_all_dbs" => "search#searchalldbs"
   

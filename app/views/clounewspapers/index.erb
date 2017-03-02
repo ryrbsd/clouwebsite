@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="/css/recuritments.css">
+<div class="mainfield contain">
+  
+  <h5>
+    科陆人报
+  </h5>
+  <hr class="hr">
+<table class="tg">
+  <tr>
+    <th class="tg-baqh">标题</th>
+
+  </tr>
+  <% grey = 1%>
+  <% @newspapers.each do |newspaper|%>
+    <tr>
+      <%if grey==1%>
+        <td class="tg-dzk6"><%= link_to newspaper.title, newspaper.attachment_url%></td>
+        <% grey = 0%>
+      <%else%>
+        <td class="tg-dzk4"><%= link_to newspaper.title, newspaper.attachment_url%></td>
+      <% grey = 1%>
+      <%end%>
+    </tr>
+   
+  <%end%>
+</table>
+  <%= will_paginate @newspapers,:previous_label => '上一页',:next_label=> '下一页' %>
+</div>
