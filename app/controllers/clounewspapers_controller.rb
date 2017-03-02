@@ -4,7 +4,7 @@ class ClounewspapersController < ApplicationController
   # GET /employee_stories
   # GET /employee_stories.json
   def index
-    @newspapers = Clounewspapers.where(:Authorized => true).paginate :page => params[:page],:per_page => 30
+    @newspapers = Clounewspapers.where(:Authorized => true).reverse
   end
 
 
