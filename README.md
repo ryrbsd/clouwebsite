@@ -10,7 +10,7 @@
     service nginx restart
     
 ```
-
+https://ryr-works-ryrbsd.c9users.io/
 
 如果上传图片的时候出现错误：Original Error: ImageMagick/GraphicsMagick is not installed
 run:

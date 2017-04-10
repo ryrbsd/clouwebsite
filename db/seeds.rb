@@ -8,11 +8,11 @@
 
 user1 = User.new
 user1.email = 'raoyiran@hotmail.com'
-# user1.password = 'aia20022'
-# user1.password_confirmation = 'aia20022'
-# user1.role = 'developer'
-# user1.authorized = true
-# user1.save!
+user1.password = 'aia20022'
+user1.password_confirmation = 'aia20022'
+user1.role = 'developer'
+user1.authorized = true
+user1.save!
 
 # user3 = User.new
 # user3.email = 'root@szclou.com'
@@ -27,12 +27,12 @@ user1.email = 'raoyiran@hotmail.com'
 #         product.save!
 #     end
 # end
-Type.all.each do |type|
-    if type.priority == 0
-        type.priority = 999
-        type.save!
-    end
-end
+# Type.all.each do |type|
+#     if type.priority == 0
+#         type.priority = 999
+#         type.save!
+#     end
+# end
 
 # Product.all.each do |product|
 #     if product.Authorized != true
