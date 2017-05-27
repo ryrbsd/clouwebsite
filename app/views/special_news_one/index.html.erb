@@ -2,17 +2,18 @@
 
 <link rel="stylesheet" type="text/css" href="/css/specialnews.css">
 <div class="main contain">
-    <div class="topnews">
-        <!--<h1>〝CIBF2016〞登陆鹏城，科陆储能闪耀全场</h1>-->
-        <a class="specialnewstitle" href="/special_news_one/2"><%= @news_two.title%></a>
-    </div>
-    <hr class="hr">
-    <div class="topnewscontent">
-        <div class="newsimg" style='background-image: url(<%= @news_two.image%>)'></div>
-        <p class="newsoutline"> &nbsp; &nbsp;&nbsp;&nbsp;<%= @news_two.description%></p>
-    </div>
-    <hr style="margin-bottom: 50px;">
-    
+    <%if @news_two != nil %>
+        <div class="topnews">
+            <!--<h1>〝CIBF2016〞登陆鹏城，科陆储能闪耀全场</h1>-->
+            <a class="specialnewstitle" href="/special_news_one/2"><%= @news_two.title%></a>
+        </div>
+        <hr class="hr">
+        <div class="topnewscontent">
+            <div class="newsimg" style='background-image: url(<%= @news_two.image%>)'></div>
+            <p class="newsoutline"> &nbsp; &nbsp;&nbsp;&nbsp;<%= @news_two.description%></p>
+        </div>
+        <hr style="margin-bottom: 50px;">
+    <%end%>
     <!--<%@news.each do |news|%>-->
     <!--    <div class="specialnews" style='background-image: url("<%= news.image%>");'>-->
     <!--        <div class="feature-gradient">-->
@@ -27,18 +28,17 @@
     <!--        </div>-->
     <!--    </div>-->
     <!--<%end%>-->
-    
-    <div class="topnews">
-        <!--<h1>〝CIBF2016〞登陆鹏城，科陆储能闪耀全场</h1>-->
-        <a class="specialnewstitle" href="/special_news_one/2"><%= @news_one.title%></a>
-    </div>
-    <hr class="hr">
-    <div class="topnewscontent">
-        <div class="newsimg" style='background-image: url(<%= @news_one.image%>)'></div>
-        <p class="newsoutline"> &nbsp; &nbsp;&nbsp;&nbsp;<%= @news_one.description%></p>
-    </div>
-    <hr style="margin-bottom: 50px;">
-    
+    <%if @news_one != nil %>
+        <div class="topnews">
+            <a class="specialnewstitle" href="/special_news_one/2"><%= @news_one.title%></a>
+        </div>
+        <hr class="hr">
+        <div class="topnewscontent">
+            <div class="newsimg" style='background-image: url(<%= @news_one.image%>)'></div>
+            <p class="newsoutline"> &nbsp; &nbsp;&nbsp;&nbsp;<%= @news_one.description%></p>
+        </div>
+        <hr style="margin-bottom: 50px;">
+    <%end%>
     <!--<div class="footnews">-->
         <!--<h1>“2016第六届中国国际储能大会” 科陆斩获三项大奖</h1>-->
     <!--    <a class="specialnewstitle" href="/special_news_one/2"><%= @news_two.title%></a>-->
