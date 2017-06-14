@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
+
   resources :types
   
   resources :q_types do

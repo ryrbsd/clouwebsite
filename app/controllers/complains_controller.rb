@@ -15,16 +15,20 @@ class ComplainsController < ApplicationController
   # POST /complains
   # POST /complains.json
   def create
-    @complain = Complain.new(complain_params)
-
-    respond_to do |format|
-      if @complain.save
-        format.html { redirect_to complain_success_path, notice: 'Complain was successfully created.' }
-        format.json { render :show, status: :created, location: @complain }
-      else
-        format.html { render :new }
-        format.json { render json: @complain.errors, status: :unprocessable_entity }
+    if verify_rucaptcha?
+      @complain = Complain.new(complain_params)
+  
+      respond_to do |format|
+        if @complain.save
+          format.html { redirect_to complain_success_path, notice: 'Complain was successfully created.' }
+          format.json { render :show, status: :created, location: @complain }
+        else
+          format.html { render :new }
+          format.json { render json: @complain.errors, status: :unprocessable_entity }
+        end
       end
+    else
+      redirect_to '/complains/new', notice: '验证码错误'
     end
   end
   

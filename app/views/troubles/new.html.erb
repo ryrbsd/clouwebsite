@@ -7,6 +7,11 @@
 
   <div class="content">
     <%= form_for @trouble do |f| %>
+      <% if flash[:notice] %>
+        <div class="alert alert-danger">
+          <%= flash[:notice] %>
+        </div>
+      <%end%>
       <% if @trouble.errors.messages.count > 0 %>
         <div class="alert alert-danger">
           <% @trouble.errors.messages.each do |error| %>
@@ -59,7 +64,10 @@
         <%= f.text_field :product_type, autofocus: true, :class => 'myfield' %>
         <%= f.text_field :product_id, autofocus: true, :class => 'myfield' %>
         <%= f.text_area :text, autofocus: true, :class => 'mycomplain'%>
-        
+        <br>
+        <%= rucaptcha_input_tag(class: 'form-control', placeholder: '请输入验证码') %>
+        <%= rucaptcha_image_tag(alt: 'Captcha') %>
+        <br>
         <%= f.submit "提交", :class => 'submit' %>
         <a style="margin-top: 21px; margin-bottom:118px;"></a>
       </div>

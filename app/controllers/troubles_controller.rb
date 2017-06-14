@@ -15,9 +15,9 @@ class TroublesController < ApplicationController
   # POST /troubles
   # POST /troubles.json
   def create
-    @trouble = Trouble.new(trouble_params)
-
-    respond_to do |format|
+    if verify_rucaptcha?
+      @trouble = Trouble.new(trouble_params)
+      respond_to do |format|
       if @trouble.save
         format.html { redirect_to trouble_success_path, notice: 'Trouble was successfully created.' }
         format.json { render :show, status: :created, location: @trouble }
@@ -25,6 +25,10 @@ class TroublesController < ApplicationController
         format.html { render :new }
         format.json { render json: @trouble.errors, status: :unprocessable_entity }
       end
+    end
+      
+    else
+      redirect_to '/troubles/new', notice: '验证码错误'
     end
   end
 

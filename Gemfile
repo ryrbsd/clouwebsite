@@ -71,6 +71,8 @@ gem 'jquery-turbolinks'
 # for multi pages
 gem 'will_paginate', '~> 3.0.5'
 
+gem 'rucaptcha'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
