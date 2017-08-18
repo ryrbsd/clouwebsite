@@ -160,9 +160,9 @@ ul li ul {
     width: 32.8%;
     height: 300px;
     color: white;
-    background-size: 104%;
     background-position: center;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     -moz-transition-property: background-size;
     -o-transition-property: background-size;
