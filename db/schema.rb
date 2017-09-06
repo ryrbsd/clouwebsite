@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161223065333) do
+ActiveRecord::Schema.define(version: 20170906154424) do
 
   create_table "announcements", force: :cascade do |t|
     t.datetime "date"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20161223065333) do
     t.datetime "updated_at",                  null: false
     t.boolean  "send_email",  default: false
     t.boolean  "Authorized",  default: false
+    t.string   "attachment"
   end
 
   create_table "campus_recuritments", force: :cascade do |t|

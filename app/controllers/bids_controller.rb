@@ -5,7 +5,8 @@ class BidsController < ApplicationController
   # GET /bids.json
   def index
     # @bids = Bid.all
-    @bids = Bid.where(:Authorized => true).where("DATE(deadline) > DATE(?)", Time.now).order(created_at: :desc)
+    # @bids = Bid.where(:Authorized => true).where("DATE(deadline) > DATE(?)", Time.now).order(created_at: :desc)
+    @bids = Bid.where(:Authorized => true).order(created_at: :desc)
   end
 
   # GET /bids/1

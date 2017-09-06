@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/css/recuritments.css">
 <div class="mainfield container">
-  
+
   <h5>
     招标信息
   </h5>
@@ -15,12 +15,20 @@
   <% @bids.each do |bid|%>
     <tr>
       <%if grey==1%>
-        <td class="tg-dzk6"><%= bid.deadline.to_date%></td>
+        <%if bid.deadline%>
+          <td class="tg-dzk6"><%= bid.deadline.to_date%></td>
+        <%else%>
+          <td class="tg-dzk6">    </td>
+        <%end%>
         <td class="tg-dzk6"><%= bid.department%></td>
         <td class="tg-dzk6"><%= link_to bid.position, bid_path(:id => bid.id)%></td>
         <% grey = 0%>
       <%else%>
-        <td class="tg-dzk6"><%= bid.deadline.to_date%></td>
+        <%if bid.deadline%>
+          <td class="tg-dzk6"><%= bid.deadline.to_date%></td>
+        <%else%>
+          <td class="tg-dzk6">    </td>
+        <%end%>
         <td class="tg-dzk6"><%= bid.department%></td>
         <td class="tg-dzk6"><%= link_to bid.position, bid_path(:id => bid.id)%></td>
       <% grey = 1%>

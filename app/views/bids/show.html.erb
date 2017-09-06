@@ -4,9 +4,27 @@
         <h5><%= @bid.position%></h5>
         <hr class="hr">
         <p class="info" style="margin-top:40px;">部门：<%= @bid.department%></p>
-        <p class="info">截止日期：<%= @bid.deadline.to_date%></p>
+        <%if @bid.deadline %>
+            <p class="info">截止日期：<%= @bid.deadline.to_date%></p>
+        <%else%>
+            <p class="info">截止日期:无</p>
+        <%end%>
         <div class="body" id="productbody"><%= @bid.description.html_safe %></div>
+        <%if @bid.attachment_url != nil%>
+        <% if current_user and current_user.authorized == true %> 
+            <%= link_to "下载附件", @bid.attachment_url, class: "downloadlink" %>
+        <% elsif current_user and current_user.authorized == false %>
+            <p class="downloadlink">您是未授权用户,无法下载</p>
+        <% else %> 
+            <p class="welcomewords">请</p>
+            <a  class="login login-link" href="#" onclick="return false;">登录</a>
+            <p class="welcomewords">后下载</p>
+        <%end%>
+    <%end%>
     </div>
+    <br>
+    <br>
+    <br>
 </div>
 <script>
     $(document).ready(function () {
