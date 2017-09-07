@@ -17,6 +17,10 @@ class CkeditorAttachmentFileUploader < CarrierWave::Uploader::Base
   def store_dir
     "uploads/ckeditor/attachments/#{model.id}"
   end
+  
+  def filename
+    Time.now.to_i.to_s+".#{file.extension}" if original_filename.present?
+  end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
