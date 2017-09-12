@@ -8,7 +8,7 @@ RailsAdmin.config do |config|
                             "SocietyRecuritment", "User", "YearReport", "Announcement",
                             "QandA", "QType", "ServiceCase", "CaseType", "Complain", 
                             "Trouble", "Honor", "SpecialNewsOne", "SpecialNewsTwo", 
-                            "Clounewspapers"]
+                            "Clounewspapers", "Training"]
                             
   #history
   # config.audit_with :history
@@ -35,7 +35,7 @@ RailsAdmin.config do |config|
                             "SocietyRecuritment", "User", "YearReport", "Announcement",
                             "QandA", "QType", "ServiceCase", "CaseType", "Complain", 
                             "Trouble", "Honor", "SpecialNewsOne", "SpecialNewsTwo", 
-                            "Clounewspapers"]
+                            "Clounewspapers", "Training"]
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
   config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0

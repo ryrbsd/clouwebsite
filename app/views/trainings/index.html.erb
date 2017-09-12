@@ -1,0 +1,41 @@
+<link rel="stylesheet" type="text/css" href="/css/recuritments.css">
+<div class="mainfield container">
+
+  <h5>
+    培训信息
+  </h5>
+  <hr class="hr">
+<table class="tg">
+  <tr>
+    <th class="tg-baqh" style =" width:20%;">时间</th>
+    <th class="tg-baqh" style =" width:20%;">标题</th>
+  </tr>
+  <% grey = 1%>
+  <% @trainings.each do |training|%>
+    <tr>
+      <%if grey==1%>
+        <%if training.created_at %>
+          <td class="tg-dzk6"><%= training.created_at.to_date%></td>
+        <%else%>
+          <td class="tg-dzk6">    </td>
+        <%end%>
+        <td class="tg-dzk6"><%= link_to training.title, training_path(:id => training.id)%></td>
+        <% grey = 0%>
+      <%else%>
+        <%if training.created_at%>
+          <td class="tg-dzk6"><%= training.created_at.to_date%></td>
+        <%else%>
+          <td class="tg-dzk6">    </td>
+        <%end%>
+        <td class="tg-dzk6"><%= link_to training.title, training_path(:id => training.id)%></td>
+      <% grey = 1%>
+      <%end%>
+    </tr>
+  <%end%>
+</table>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#supplier').addClass('act');
+    });
+</script>

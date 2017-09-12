@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trainings
   resources :honors
   resources :complains
   resources :troubles
@@ -16,6 +17,7 @@ Rails.application.routes.draw do
   resources :pop_product
   resources :company_news
   resources :industry_news
+  resources :trainings
   
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

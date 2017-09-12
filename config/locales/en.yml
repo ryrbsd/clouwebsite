@@ -42,6 +42,7 @@ en:
       honor: "荣誉资质"
       special_news_one: "专题一"
       special_news_two: "专题二"
+      training: "员工培训"
   admin:
     js:
       true: True
