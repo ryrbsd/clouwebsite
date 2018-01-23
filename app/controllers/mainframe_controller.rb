@@ -11,6 +11,7 @@ class MainframeController < ApplicationController
     # @products = Product.all
     @popproducts = PopProduct.where(:Authorized => true).limit(4).order('id desc')
     @company_news = CompanyNews.where(:Authorized => true).order("created_at desc").limit(8)
+    @table_main_pics = TableMainPic.where(:authorized => true).order('id desc').limit(4)
   end
   
   def products

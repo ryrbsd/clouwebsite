@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170912001010) do
+ActiveRecord::Schema.define(version: 20180122011831) do
 
   create_table "announcements", force: :cascade do |t|
     t.datetime "date"
@@ -270,6 +270,13 @@ ActiveRecord::Schema.define(version: 20170912001010) do
     t.string   "image"
     t.string   "author"
     t.boolean  "Authorized",  default: false
+  end
+
+  create_table "table_main_pics", force: :cascade do |t|
+    t.string   "picture_url"
+    t.boolean  "authorized"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "trainings", force: :cascade do |t|

@@ -24,12 +24,18 @@
     border-color:#ae221a;
 }
 
-
+.itemone {
+    height: 700px !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow: hidden;
+}
 .main-banner {
     position: relative;
     top: 90px;
     /*background-image: url("../img/homepage/banner_03.jpg") !important;*/
-    height: 500px;
+    height: 700px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -147,6 +153,10 @@ h1 {
     background-repeat: no-repeat !important;
     background-size: cover !important; 
     overflow: hidden;
+}
+
+.bannerinner{
+    padding: 0 50px !important;
 }
 
 .special-img-one {
