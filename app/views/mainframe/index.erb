@@ -2,11 +2,17 @@
 <title>CLOU Home</title>
 <link rel="stylesheet" type="text/css" href="/css/index.css">
 <body>
-    <!--<div class="main-banner" id="main-banner" style="background-image: url('../img/homepage/homebanner.jpg') !important;">-->
-    <!--    <h15>推动全球能源优化利用</h15>-->
-    <!--    <a class="banner-btn" href="/aboutus" role="button">点击了解详情</a>-->
-    <!--</div>-->
-    
+  <%if @table_main_pics.length == 0%>
+    <div class="main-banner" id="main-banner" style="background-image: url('../img/homepage/homebanner.jpg') !important;">
+        <h15>推动全球能源优化利用</h15>
+        <a class="banner-btn" href="/aboutus" role="button">点击了解详情</a>
+    </div>
+  <%elsif%>
+      <div class="main-banner" id="main-banner" style="background-image: url(<%= @table_main_pics.first.picture_url%>) !important;">
+        <h15>推动全球能源优化利用</h15>
+        <a class="banner-btn" href="/aboutus" role="button">点击了解详情</a>
+      </div>
+  <%else%>
      <div class="main-banner">
         <div id="myCarousel" class="carousel contain slide" data-ride="carousel" style="top: 0px !important;width: 100%;height:  100%;">
         <!-- Indicators -->
@@ -20,20 +26,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner bannerinner" role="listbox" style="padding: 0 !important;top: 0px;height:  700px;">
             <%i=1%>
-          <% @table_main_pics.each do |product| %>
+          <% @table_main_pics.each do |pic| %>
               <% if i==1%>
-                  <div class="item active itemone" style="background-image: url(<%= product.picture_url%>">
+                  <div class="item active itemone" style="background-image: url(<%= pic.picture_url%>">
                     <!--<img class="altofit" src="img/homepage/testproduct.png" alt="product" width="270" height="270">-->
                   </div>
                   <%i+=1%>
                 <%else%>
-                    <div class="item itemone" style="background-image: url(<%= product.picture_url%>">
+                    <div class="item itemone" style="background-image: url(<%= pic.picture_url%>">
                     <!--<img class="altofit" src="img/homepage/testproduct.png" alt="product" width="270" height="270">-->
                     </div>
                     <%i+=1%>
                 <%end%>
           <%end%>
         </div>
+  <%end%>      
     
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -87,7 +94,7 @@
     <div class="special-topic">
         <ul class="contain">
             <li>
-                <div class="special-img-one" style="background-image:url('../img/homepage/specialnewsonepagecover.jpg')">
+                <div class="special-img-one" style="background-image:url('../img/homepage/rao1.jpg')">
                     
                 </div>
                 
@@ -101,7 +108,7 @@
                     
                 </div>
                 <a href="/special_news_two" class="special-title">
-                    科陆二十周年
+                    储能案例
                 </a>
             </li>
 
@@ -120,7 +127,7 @@
         
         <!--outer-->
         <div class="carousel-outer">
-            <h4>产品展示</h4>
+            <h4>解决方案</h4>
             <a href="/allproducts" class="allproduct">点击查看所有产品</a>
         </div>
     

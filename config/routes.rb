@@ -146,4 +146,5 @@ Rails.application.routes.draw do
   
   get "registrationsuccess", :to => "mainframe#registrationsuccess", :format => false
   get "copyright", :to => "mainframe#copyright", :format => false
+  get "culture", :to => "mainframe#culture", :format => false
 end

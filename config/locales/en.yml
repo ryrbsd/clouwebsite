@@ -22,8 +22,8 @@ en:
       user: "用户"
       category: "产品大类"
       type: "产品小类"
-      product: "产品"
-      pop_product: "明星产品"
+      product: "产品&方案"
+      pop_product: "明星方案"
       campus_recuritment: "校园招聘"
       society_recuritment: "社会招聘"
       industry_news: "行业新闻"
@@ -43,6 +43,7 @@ en:
       special_news_one: "专题一"
       special_news_two: "专题二"
       training: "员工培训"
+      table_main_pic: "首页图片"
   admin:
     js:
       true: True

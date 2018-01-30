@@ -21,7 +21,10 @@ class CkeditorAttachmentFileUploader < CarrierWave::Uploader::Base
   def filename
     Time.now.to_i.to_s+".#{file.extension}" if original_filename.present?
   end
-
+  
+  def filename
+    Time.now.to_i.to_s+".#{file.extension}" if original_filename.present?
+  end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')

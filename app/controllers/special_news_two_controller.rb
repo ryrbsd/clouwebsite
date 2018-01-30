@@ -1,7 +1,7 @@
 class SpecialNewsTwoController < ApplicationController
     
     def index
-        @news = SpecialNewsTwo.where(:Authorized => true)
+        @news = SpecialNewsTwo.where(:Authorized => true).order('id desc')
     end
     
     def show

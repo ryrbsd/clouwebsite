@@ -55,6 +55,8 @@ class MainframeController < ApplicationController
   def destroy
   end
   
+  def culture
+  end
 
   
 end
