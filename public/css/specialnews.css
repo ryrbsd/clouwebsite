@@ -7,18 +7,18 @@
     font-family: "Microsoft Yahei", 微软雅黑, Light, Arial, sans-serifsans-serif;
     font-weight: lighter !important;
 }
-.two-cell{
-    position: relative;
-    top: 90px;
-    height: 1300px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    width: 100%;
-    overflow: hidden;
+/*.two-cell{*/
+/*    position: relative;*/
+/*    top: 90px;*/
+/*    height: 1300px;*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover; */
+/*    width: 100%;*/
+/*    overflow: hidden;*/
     /*margin-top: -30px;*/
-    text-align: center;
-}
+/*    text-align: center;*/
+/*}*/
 .hr {
     position: relative;
     border: 1.5px solid #c4261d;
@@ -163,18 +163,21 @@ h8 {
     font-size: 20px;
 }
 
-.banner {
+.banner,.two-cell {
     position: relative;
     top: 90px;
-    background-image: url("../img/about_us/aboutusbanner.jpg") !important;
     height: 700px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: contain; 
     width: 100%;
     overflow: hidden;
     /*margin-top: -30px;*/
     text-align: center;
+}
+
+.two-cell {
+    height: 800px;
 }
 .slogan{
     text-align: left;
