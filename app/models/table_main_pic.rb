@@ -24,7 +24,7 @@ class TableMainPic < ActiveRecord::Base
           #   label "视频链接"
           # end
           field :picture_url, :carrierwave do
-            label "封面(只显示最后上传的五张)"
+            label "封面(只显示最后上传的四张)"
           end
           field :authorized do
             label "已审核"
