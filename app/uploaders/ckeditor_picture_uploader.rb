@@ -35,6 +35,11 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
   version :thumb do
     process resize_to_fill: [118, 100]
   end
+  
+  def filename
+    Time.now.to_i.to_s+".#{file.extension}" if original_filename.present?
+  end
+  
 
   version :content do
     process resize_to_limit: [800, 800]
