@@ -97,9 +97,3 @@ Rails.application.configure do
   # config.force_ssl = true
 
 end
-# config/application.rb
-module MyApp
-  class Application < Rails::Application
-    config.force_ssl = true
-  end
-end
