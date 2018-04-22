@@ -11,3 +11,8 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
+   
+   # ssl_protocols TLSv1 TLSv1.1 TLSv1.2; 
+  # ssl_ciphers HIGH:!aNULL:!MD5;
+  
+  #Read more at https://www.pluralsight.com/guides/ruby-ruby-on-rails/using-https-with-ruby-on-rails#joq2OeJP6QAQVvHF.99
