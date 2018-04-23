@@ -94,6 +94,6 @@ Rails.application.configure do
   config.assets.precompile += %w( video-js.swf vjs.eot vjs.svg vjs.ttf vjs.woff )
   
   # force HTTPS on production
-  #config.force_ssl = true
+  config.force_ssl = true
 
 end
