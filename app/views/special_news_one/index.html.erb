@@ -1,129 +1,48 @@
 <!--specialcase one#index-->
 
-<link rel="stylesheet" type="text/css" href="/css/specialnews.css">
-<div class="banner" style="background-image: url('../img/specialnews/raonewscover.jpg') !important;">
+<link rel="stylesheet" type="text/css" href="/css/specialnews1.css">
+<div class="banner" style="background-image: url('../img/specialnews/fightDisease.jpg') !important;">
     <div class="slogan contain">
-        <h8>2017年4月，科陆董事长饶陆华先生作为“中国化学与物理电源行业协会储能应用分会”理事长，在“第七届中国国际储能大会”上发表致辞。</h8><br>
+        <!--<h8>抗击冠状病毒,科陆在行动！</h8><br>-->
     </div>
 </div>
 <div class="main contain">
-    <%if @news_two != nil %>
-        <div class="topnews">
-            <!--<h1>〝CIBF2016〞登陆鹏城，科陆储能闪耀全场</h1>-->
-            <a class="specialnewstitle" href="/special_news_one/2"><%= @news_two.title%></a>
-        </div>
-        <hr class="hr">
-        <div class="topnewscontent">
-            <div class="newsimg" style='background-image: url(<%= @news_two.image%>)'></div>
-            <p class="newsoutline"> &nbsp; &nbsp;&nbsp;&nbsp;<%= @news_two.description%></p>
-        </div>
-        <hr style="margin-bottom: 50px;">
-    <%end%>
-    <!--<%@news.each do |news|%>-->
-    <!--    <div class="specialnews" style='background-image: url("<%= news.image%>");'>-->
-    <!--        <div class="feature-gradient">-->
-                
-    <!--        </div>-->
-            <!--<a href="#" class="specialnewslink"></a>-->
-    <!--        <%= link_to "", special_news_one_path(:id => news.id), class:"specialnewslink" %>-->
-    <!--        <div class="figcaption">-->
-    <!--            <h2><%= news.title%></h2>-->
-    <!--            <p class="newscontentp"><%= news.description%></p>-->
-    
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--<%end%>-->
-    <%if @news_one != nil %>
-        <div class="topnews">
-            <a class="specialnewstitle" href="/special_news_one/1"><%= @news_one.title%></a>
-        </div>
-        <hr class="hr">
-        <div class="topnewscontent">
-            <div class="newsimg" style='background-image: url(<%= @news_one.image%>)'></div>
-            <p class="newsoutline"> &nbsp; &nbsp;&nbsp;&nbsp;<%= @news_one.description%></p>
-        </div>
-        <hr style="margin-bottom: 50px;">
-    <%end%>
-    <!--<div class="footnews">-->
-        <!--<h1>“2016第六届中国国际储能大会” 科陆斩获三项大奖</h1>-->
-    <!--    <a class="specialnewstitle" href="/special_news_one/2"><%= @news_two.title%></a>-->
-    <!--</div>-->
-    <!--<hr class="hr">-->
-    <!--<p class="bottomnewscontent">-->
-    <!--        <%= @news_one.description %>-->
-    <!--</p>-->
-    <!--<div class="specialoneimagefield">-->
-    <!--    <div class="singleimage" style="background-image: url('../img/specialnews/honer1.jpg')">-->
-            
-    <!--    </div>-->
-    <!--    <div class="singleimage" style="background-image: url('../img/specialnews/honer2.jpg')">-->
-            
-    <!--    </div>-->
-    <!--    <div class="singleimage" style="background-image: url('../img/specialnews/honer3.jpg')">-->
-            
-    <!--    </div>-->
-    <!--    <div class="singleimage" style="background-image: url('')">-->
-            
-    <!--    </div>-->
-    <!--</div>-->
-    <div class="specialvideos">
-        <h1>相关视频</h1>
-        <hr class="hr">
-        <div class="videos">
-            <div class="video leftpart">
-                <a class='videoone' style="background-image: url('../img/specialnews/video_special1.png')"></a>
-                <a id="video_one_link" href="#" style="font-size: 16px;" onclick="return false;">科陆智慧能源之储能电厂</a>
-            </div>
-        </div>
 
-        <div class="videos">
-            <div class="video rightpart">
-                <a class='videoone' style="background-image: url('../img/specialnews/video2cover.png')"></a>
-                <a id="video_two_link" href="#" style="font-size: 16px;" onclick="return false;">储能对提升可再生能源渗透率的综合效益研究</a>
-            </div>
-        </div>
-    </div>
+    <%@news.each do |news|%>
+        <%if news != nil and news.Authorized%>
+        <!--<div class="specialnews" style='background-image: url("<%= news.image%>");'>-->
+        <!--       <div class="feature-gradient">-->
+                    
+        <!--        </div>-->
+               
+    
+        <!--        <a href="/special_news_one/<%=news.id%>" class="specialnewslink"><%=news.title%></a>-->
+                <!--<%= link_to(news.title, showcompanynews_news_index_path(:id => news.id), class: "newstitle")%>-->
+        <!--        <div class="figcaption">-->
+        <!--            <h2><%= news.title%></h2>-->
+        <!--            <p class="newscontentp"><%= news.description%></p>-->
+        
+        <!--       s </div>-->
+        <!--    </div>-->
+         <li>
+                <div class="newscell">
+                    <div class="newsimg" style="background: url(<%= news.image%>);">
+                        
+                    </div>
+                    <div class="text-field">
+                        <a href="/special_news_one/<%=news.id%>" class="specialnewslink"><%=news.title%></a>
+                        <p class="newstime"><%= news.created_at.to_date %><p class="newstext"><%= news.description %></p></p>
+                    </div>
+                </div>
+            </li>
+        <%end%>
+    <%end%>
 
 
 </div>
-<div class="main contain">
-    <h1>会议日程</h1>
-    <hr class="hr">
-    <a  href="/uploads/schedule.pdf" style="font-size: 16px;">闭门会议日程(PDF)</a>
-</div>
-
-<!-- Modal video one -->
-<div class="modal hide fade" id="video_one_modal">
-  <div id="videocenter" class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;"><span aria-hidden="true">&times;</span></button>
-    
-    <video oncontextmenu="return false;"  class="newsvideo" src="/videos/video_special1.mp4"  controls="controls" controlsList="nodownload">
-        Your browser does not support the video tag.
-    </video>
-
-  </div>
-
-  
-</div> 
 
 
 
-
-
-
- <!--Modal video two -->
-<div class="modal hide fade" id="video_two_modal">
-  <div id="videocenter" class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;"><span aria-hidden="true">&times;</span></button>
-    
-    <video oncontextmenu="return false;"  class="newsvideo" src="/videos/yanjiu.mp4"  controls="controls">
-        Your browser does not support the video tag.
-    </video>
-
-  </div>
-
-  
-</div> 
 
 
 

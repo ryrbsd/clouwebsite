@@ -43,6 +43,10 @@ Rails.application.routes.draw do
     get "news", :on => :collection
     get "industrynews", :on => :collection
   end
+  
+  resource :special_news_one do
+    get "showspecialnewsones", :on => :collection
+  end
 
   resources :categories
   # resources :categories do 

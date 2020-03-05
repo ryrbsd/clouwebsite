@@ -121,3 +121,4 @@ cap invoke                # Invoke a single command on the remote servers.
 cap shell                 # Begin an interactive Capistrano session.
 ```
 
+rails server -b $IP -p $PORT 

@@ -7,6 +7,10 @@ class SpecialNewsOneController < ApplicationController
     end
     
     def show
+        @news = SpecialNewsOne.where(:Authorized => true).find(params[:id])
+    end
+
+    def showspecialnewsones
         @news = SpecialNewsOne.find(params[:id])
     end
 
