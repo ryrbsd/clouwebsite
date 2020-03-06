@@ -102,50 +102,50 @@
     <%end%>
 </div>
 
-<script>
-  $(document).ready(function () {
-    $('#products').addClass('act');
-  });
+<!--<script>-->
+<!--  $(document).ready(function () {-->
+<!--    $('#products').addClass('act');-->
+<!--  });-->
    
 
-  $(function() {
+<!--  $(function() {-->
     
 
-      var lastScroll = 0;
-      var scrollt = $('#myCarousel').offset().top;
+<!--      var lastScroll = 0;-->
+<!--      var scrollt = $('#myCarousel').offset().top;-->
       
-      $(window).bind('mousewheel DOMMouseScroll', function(event){
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-            // scroll up
-        }
-        else {
-          if(window.document.getElementById("productbanner") != null) {
-            // scroll down
-            var st = $(this).scrollTop();
+<!--      $(window).bind('mousewheel DOMMouseScroll', function(event){-->
+<!--        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {-->
+          <!--   // scroll up-->
+<!--        }-->
+<!--        else {-->
+<!--          if(window.document.getElementById("productbanner") != null) {-->
+    <!--         // scroll down{-->
+<!--            var st = $(this).scrollTop();-->
             
-            if (st > lastScroll){
+<!--            if (st > lastScroll){-->
 
-              var scrollt = $('#myCarousel').offset().top;
-              if (st <= 100) {
-                $('html, body').animate({scrollTop: scrollt}, 500);
-                st = scrollt;
-              }
-            }
-          }
-            lastScroll = st;
-        }
-        lastScroll = $(this).scrollTop();
-      });
-      lastScroll = $(this).scrollTop();
+<!--              var scrollt = $('#myCarousel').offset().top;-->
+<!--              if (st <= 100) {-->
+<!--                $('html, body').animate({scrollTop: scrollt}, 500);-->
+<!--                st = scrollt;-->
+<!--              }-->
+<!--            }-->
+<!--          }-->
+<!--            lastScroll = st;-->
+<!--        }-->
+<!--        lastScroll = $(this).scrollTop();-->
+<!--      });-->
+<!--      lastScroll = $(this).scrollTop();-->
       
-      $('.productbanner').on('click', function(e) {
-        var scrollt = $('#myCarousel').offset().top;
-        $('html, body').animate({
-                    scrollTop: scrollt
-        }, 1000);
-        st = scrollt;
-        lastScroll = st;
-      });
-    });
+<!--      $('.productbanner').on('click', function(e) {-->
+<!--        var scrollt = $('#myCarousel').offset().top;-->
+<!--        $('html, body').animate({-->
+<!--                    scrollTop: scrollt-->
+<!--        }, 1000);-->
+<!--        st = scrollt;-->
+<!--        lastScroll = st;-->
+<!--      });-->
+<!--    });-->
   
-</script>
+<!--</script>-->
