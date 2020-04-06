@@ -31,7 +31,7 @@
               <%= "公司地址"+error.second.first%>
               
             <%elsif error[0] == :product_type %>
-              <%= "产品类型"+error.second.first%>
+              <%= "产品线"+error.second.first%>
               
             <%elsif error[0] == :product_id %>
               <%= "产品型号"+error.second.first%>
@@ -49,7 +49,7 @@
         <span class='mytext'>公司名称 *&emsp;</span>
         <span class='mytext'>公司地址 *&emsp;</span>
         <span class='mytext'>合同号 &emsp;</span>
-        <span class='mytext'>产品类型 *&emsp;</span>
+        <span class='mytext'>产品线 *&emsp;</span>
         <span class='mytext'>产品型号 *&emsp;</span>
         <span class='mytext'>故障内容 &emsp;</span>
       </div>
@@ -61,7 +61,12 @@
         <%= f.text_field :customer_company, autofocus: true, :class => 'myfield' %>
         <%= f.text_field :customer_address, autofocus: true, :class => 'myfield' %>
         <%= f.text_field :contract_id, autofocus: true, :class => 'myfield' %>
-        <%= f.text_field :product_type, autofocus: true, :class => 'myfield' %>
+        <select name="trouble[product_type]" id="trouble_product_type" class="myfield">
+          <option value="电力物联网">电力物联网</option>
+          <option value="电能表">电能表</option>
+          <option value="精密仪器">精密仪器</option>
+          <option value="智慧工业">智慧工业</option>
+          <option value="储能">储能</option></select>
         <%= f.text_field :product_id, autofocus: true, :class => 'myfield' %>
         <%= f.text_area :text, autofocus: true, :class => 'mycomplain'%>
         <br>
