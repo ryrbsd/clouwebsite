@@ -12,6 +12,10 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20 {
     font-family: "Microsoft Yahei","微软雅黑",Light, Arial,sans-serifsans-serif !important;
 }
 
+.dropdown-content-a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
 
 .top {
     position: relative;
@@ -24,9 +28,9 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20 {
 
 nav .links a {
     padding-top: 39px;
-    margin-left: 38px;
+    margin-left: 30px;
     
-    padding-bottom: 32px !important;
+    padding-bottom: 32px ;
 }
 
 nav .links a:hover {
@@ -497,3 +501,49 @@ li {
 .act {
     color: #c4261d !important;
 }
+
+
+.dropbtn {
+    background-color: transparent;
+    color: #58585B;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 93.5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:9999;
+    -webkit-transition: all .28s ease-in .1s;
+     transition: all .28s ease-in .1s;
+}
+
+.dropdown-content a {
+    color: black;
+    margin:auto !important;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover .dropbtn {
+    background-color: #3e8e41;
+}
+

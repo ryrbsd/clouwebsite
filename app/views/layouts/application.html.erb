@@ -15,7 +15,7 @@
   <%end%>
   
   <link rel="shortcut icon" href="/img/homepage/icon.png" />
-  <!--Bootstrap CSS-->
+  <!--Bootstrap CSS--> 
 
   <!-- 新 Bootstrap 核心 CSS 文件 -->
   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -102,10 +102,46 @@
   </div>
   <span class="links">
     <a id="home" href="/">首页</a>
-    <a id="products" href="/products_main">产品</a>
-    <a id="news" href="/company_news">新闻</a>
-    <a id="service" href="/service">技术支持</a>
-    <a id="aboutus" href="/aboutus">关于我们</a>
+    <div class="dropdown">
+    <a id="products" href="/products_main" class="dropbtn">产品</a>
+      <div class="dropdown-content">
+        <% Category.where(:Authorized => true).each do |category|%>
+          <a class="dropdown-content-a" href="/catgories/<%=category.id%>"><%=category.name%></a>
+        <%end%>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a id="news" href="/company_news" class="dropbtn">新闻</a>
+      <div class="dropdown-content">
+          <a class="dropdown-content-a" href="/company_news">公司新闻</a>
+          <a class="dropdown-content-a" href="/company_news">行业新闻</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a id="service" href="/service">技术支持</a>
+      <div class="dropdown-content">
+          <a class="dropdown-content-a" href="/complains/new">投诉反馈</a>
+          <a class="dropdown-content-a" href="/troubles/new">故障报修</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a id="aboutus" href="/aboutus">关于我们</a>
+      <div class="dropdown-content">
+          <a class="dropdown-content-a" href="/clounewspapers">科陆人报</a>
+          <a class="dropdown-content-a" href="/investors">投资者关系</a>
+          <a class="dropdown-content-a" href="/history">公司历史</a>
+          <a class="dropdown-content-a" href="/contact_us">联系我们</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a id="aboutus" href="/investors">投资者关系</a>
+      <div class="dropdown-content">
+          <a class="dropdown-content-a" href="/clounewspapers">关于科陆</a>
+          <a class="dropdown-content-a" href="/">董秘邮箱</a>
+          <a class="dropdown-content-a" href="/contact_us">投资者联系方式</a>
+          <a class="dropdown-content-a" href="http://www.cninfo.com.cn/new/disclosure/stock?plate=szse&orgId=9900002262&stockCode=002121">集团公告和年报</a>
+      </div>
+    </div>
     <a id="aboutus" href="http://szclou.zhiye.com/" target="_blank">加入我们</a>
     <a id="supplier" href="/supplier">合作伙伴</a>
         <%= form_tag search_all_dbs_path, method: :get, class:"navbar-form navbar-right", style: "padding-top: 25px;" do %>
@@ -233,5 +269,7 @@
 
   ga('create', 'UA-85808308-1', 'auto');
   ga('send', 'pageview');
+  
+  
 
 </script>
