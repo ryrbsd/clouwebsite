@@ -105,16 +105,16 @@
     <div class="dropdown">
     <a id="products" href="/products_main" class="dropbtn">产品</a>
       <div class="dropdown-content">
-        <% Category.where(:Authorized => true).each do |category|%>
-          <a class="dropdown-content-a" href="/catgories/<%=category.id%>"><%=category.name%></a>
-        <%end%>
+        <!--<% Category.where(:Authorized => true).each do |category|%>-->
+          <!--<a class="dropdown-content-a" href="/catgories/<%=category.id%>"><%=category.name%></a>-->
+        <!--<%end%>-->
       </div>
     </div>
     <div class="dropdown">
       <a id="news" href="/company_news" class="dropbtn">新闻</a>
       <div class="dropdown-content">
           <a class="dropdown-content-a" href="/company_news">公司新闻</a>
-          <a class="dropdown-content-a" href="/company_news">行业新闻</a>
+          <a class="dropdown-content-a" href="/company_news">行业新闻</a>s
       </div>
     </div>
     <div class="dropdown">
