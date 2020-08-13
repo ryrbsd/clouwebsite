@@ -702,3 +702,40 @@ h2, h3 {
     opacity: .70;
     filter: alpha(opacity=70);
 }
+
+.newconceptimg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newconcept{
+    position: relative;
+    top: 90px;
+    text-align: center;
+    /*margin-bottom: 200px;*/
+    width:93%;
+}
+
+.a500h{
+     height: 500px;
+}
+
+.a700h{
+     height: 700px;
+}
+
+.a1700h{
+     height: 1700px;
+}
+
+.a900h{
+     height: 900px;
+}
+.a800h{
+     height: 800px;
+}
+
+.a4300h{
+     height: 4300px;
+}
