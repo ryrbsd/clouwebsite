@@ -1,0 +1,741 @@
+body {
+    background-color: white;
+    
+}
+
+@media (max-width: 1500px) {
+    .navlinks {
+        width: 70% !important;
+    }
+    
+    .aboutuslogan {
+        width: 70% !important;
+    }
+    
+
+}
+
+.navlinks {
+    width: 60%;
+    margin: auto;
+    
+}
+
+h7 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 50px;
+    color: white;
+    display: inline-block;
+}
+
+.nav-links {
+    color: white;
+    font-size: 16px;
+    margin-left: 30px;
+    float: right;
+    line-height: 50px;
+}
+
+h8{
+    display: inherit;
+    color: white;
+    font-size: 65px;
+    
+}
+
+.businessicon {
+    display: inline-block;
+    background-image: url('../img/about_us/businessicon.png');
+    height: 80px;
+    width: 14%;;
+    margin-right: 1.5%;
+    float: left;
+    position: relative;
+    bottom: 0px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.righttextp {
+    float: right;
+}
+
+
+.banner-btn { 
+    color:rgb(255, 255, 255);
+    font-size:19px;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left:40px;
+    padding-right:40px;
+    border-width:0px;
+    border-color:
+    rgb(197, 229, 145);
+    border-style:solid;
+    border-radius:56px;
+    background-color:rgb(196, 38, 29);
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    
+}
+
+.nav-links:focus {
+    color: white !important;
+}
+
+.banner-btn:hover,.banner-btn:focus {  
+    letter-spacing: 2px;
+    color:#ffffff !important;
+    background-color:#ae221a;
+    border-color:#ae221a;
+}
+
+h16{
+    /*width: 100%;*/
+    display: inherit;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    font-size: 32px;
+}
+
+h9 {
+    display: inline-block;
+    color: #737272;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    /*line-height: 85px;*/
+    position: relative;
+    top: 36px;
+    margin-right: 4%;
+    padding-bottom: 5px;
+    /*margin-right: 40px;*/
+}
+
+@media (max-width: 1300px) {
+    h9 {
+        
+    }
+}
+
+
+.historyimg{
+    margin: auto;
+    position: relative;
+    margin-bottom: 70px;
+    width: 90px;
+    height: 72px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+h10 {
+    color: #c4261d;
+    font-size: 50px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 70px;
+    display: inherit;
+}
+
+.conceptcontant {
+    height: 285px;
+}
+
+
+.startandmarketcontant {
+
+    width: 100%;
+    position: relative;
+    height: 285px;
+}
+
+.startrighttext {
+    padding-top: 80px;
+    background-color: #F2F2F2;
+    width: 50%;
+    text-align: left;
+    padding-left: 70px;
+    position: relative;
+    height: 100%;
+    float: right;
+}
+
+.startp {
+    line-height: 30px;
+    font-size: 18px;
+    color: black;
+    float: left;
+    width: 70%;
+}
+
+
+.startlefttext {
+    padding-top: 80px;
+    background-color: #F2F2F2;
+    width: 50%;
+    text-align: left;
+    padding-left: 70px;
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+.startleftimage {
+    float: left;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 50%;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+    text-align: center;
+    display: inline-block;
+}
+
+
+.startrightimage {
+    float: right;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 50%;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+    text-align: center;
+    display: inline-block;
+}
+
+.conceptleftimg{
+    float: left;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 67%;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+    text-align: center;
+    display: inline-block;
+}
+
+.concepttext{
+    padding-top: 80px;
+}
+
+.startandmarket {
+        background-image: url("../img/about_us/BG.jpg") !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 1100px;
+    background-color: #f5f5f5;
+    position: relative;
+    width: 100%;
+    top: 90px;
+}
+
+.aboutusslogan {
+    position: relative;
+    top: 260px;
+}
+
+.starttimeline {
+    text-align: center;
+    margin-bottom: 264px;
+    top: 90px;
+}
+
+.conceptrightimg{
+    float: right;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 67%;
+    display: inline-block;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+    text-align: center;
+}
+
+.business {
+    height: auto;
+    text-align: center;
+}
+
+h11 {
+    font-size: 30px;
+    color: black;
+    padding-bottom: 30px;
+    display: inherit;
+}
+
+
+
+.aboutusvideo {
+    position: relative;
+    top: 90px;
+    background-image: url("../img/about_us/videobackground.jpg") !important;
+    height: 500px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.timeline .right-block .circle {
+    top: 94px;
+    left: -9px;
+}
+
+.timeline .right-block img, .timeline .right-block .number-tile-small {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.timeline .circle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #c4261d;
+    border-radius: 100%;
+}
+
+.timeline .right-block {
+    width: 100%;
+    float: left;
+}
+
+.timeline .right-block img, .timeline .right-block .number-tile-small {
+    float: right;
+    margin-right: 40px;
+    margin-top: 0px;
+}
+
+.timeline .left-block img, .timeline .left-block .number-tile-small {
+    float: left;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+
+.timeline .right-block .text-block {
+    text-align: left;
+    float: right;
+    border-left: 4px solid #c4261d;
+    padding: 90px 0 140px 40px;
+}
+
+.timeline {
+    margin-top: 90px;
+}
+
+.timeline li {
+    list-style-type: none;
+    left: -20px;
+    position: relative;
+}
+
+.timeline .text-block {
+    width: 50%;
+    position: relative;
+}
+
+.timeline .left-block {
+    width: 100%;
+    float: left;
+}
+
+.timeline .left-block .text-block {
+    float: left;
+    border-right: 4px solid #c4261d;
+    text-align: right;
+    padding: 90px 40px 80px 0;
+    margin-left: 5px;
+}
+
+@media (max-width:1900px) {
+    .timeline .left-block .text-block {
+    margin-left: 4px !important;
+    }
+}
+
+.timeline .left-block .circle {
+    top: 90px;
+    right: -9px;
+}
+
+h12 {
+    vertical-align: top;
+    color: black;
+    font-size: 30px;
+}
+
+.righttext {
+    width: 33%;
+    float: right;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    padding-right: 70px;
+    text-align: right;
+}
+
+.contactuspart {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    position: relative;
+    top: 180px;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 130px;
+    height: 560px;
+}
+
+.conceptp {
+    line-height: 30px;
+    font-size: 18px;
+    color: black;
+    width: 60%;
+}
+
+.companyhistory {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    top: 90px;
+}
+
+.companyhistorycontent {
+    text-align: center;
+    
+}
+
+.lefttext {
+    width: 33%;
+    text-align: left;
+    padding-left: 70px;
+    position: relative;
+    height: 100%;
+    float: left;
+    background-color: #FAFAFA;
+    display: inline-block;
+}
+
+.distribution {
+    top: 90px;
+    height: 960px;
+    text-align: center;
+    margin-top: 90px;
+    position: relative;
+}
+
+.distribution-images {
+    -webkit-transition: background-image .15s linear;
+    -o-transition: background-image .15s linear;
+    transition: background-image .15s linear;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    overflow: hidden;
+    width: 100%;
+    margin-top: 60px;
+    height: 500px;
+}
+
+.redborderbottom {
+    border-bottom: solid 2px #c4261d;
+    cursor: pointer;
+}
+
+.concept {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.aboutusnav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #c4261d;
+    top: 90px;
+}
+
+.aboutuslogan {
+    text-align: center;
+    
+}
+
+.aboutusbanner {
+    position: relative;
+    top: 90px;
+    background-image: url("../img/about_us/aboutusbanner.jpg") !important;
+    height: 900px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    overflow: hidden;
+    /*margin-top: -30px;*/
+    text-align: center;
+}
+
+.nav-links:hover, .nav-links:active,.nav-links:focus {
+    color: white;
+}
+
+
+
+/*contact us*/
+
+.mainview {
+    position: relative;
+    top: 91px;
+    height: auto;
+    /*width: 68%;*/
+    margin: auto;
+}
+
+.contactslogan {
+    width: 100%;
+    position: relative;
+    top: 205px;
+}
+
+.tocontactus {
+    opacity: 1;
+    background-color: rgba(255,255,255, 0.4);
+    filter: alpha(opacity=40);
+    height: 90px;
+    top: 322px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.storylink {
+    color: #C4261D;
+    font-size: 30px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 90px;
+    position: relative;
+}
+
+.storybanner {
+    position: relative;
+    font-size: 30px;
+    color: #343434;
+    line-height: 90px;
+    display: inline-block;
+}
+
+.slogonbackground {
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    background: RGBA(255,255,255, 0.4);
+    filter: alpha(opacity=40);
+    height: 90px;
+    top: 322px;
+
+}
+
+h14 {
+    color: black;
+    display: inherit;
+    margin: auto;
+    margin-bottom: 35px;
+    position: relative;
+    font-size: 60px;
+    
+}
+
+h15 {
+    position: relative;
+    
+    color: black;
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 46px;
+    font-size: 24px;
+    color: #211c19;
+    margin-bottom: 30px;
+}
+
+.hr {
+    position: relative;
+    border: 2px solid #c4261d;
+    width: 40px;
+    margin-left: 2px;
+} 
+.head_company {
+    position: relative;
+    width: 100%;
+    margin-bottom: 108px;
+    margin-top: 70px;
+}
+
+.head_left, .branch_left {
+    position: relative;
+    display: inline-block;
+    width: 59%;
+}
+
+.branch_right {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    float: right;
+}
+
+h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contactp {
+    font-size: 16px;
+    line-height: 26px;
+    color: #7c7c7c;
+    margin-bottom: 0;
+}
+
+h3, h4 {
+    width: auto;
+    font-size: 20px;
+    display: initial;
+}
+
+h2, h3 {
+    color: black;
+}
+
+.branch_one {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.branch_two {
+    margin-bottom: 45px;
+}
+
+.branch_three {
+    margin-top: 30px;
+    margin-bottom: 95px;
+}
+
+.map {
+    background-image: url("../img/about_us/map.jpg");
+    width: 580px;
+    height: 220px;
+    position: absolute;
+    top: 250px;
+    float: right;
+    right: 9.5%;
+}
+
+.footer {
+    bottom: -183px !important;
+}
+
+@media (max-width: 1000px) {
+    .map {
+        display: none;
+    }
+}
+
+#videocenter {
+    height: 500px;
+    margin-top: 200px;
+    width: 800px;
+    top: 100px;
+    position: relative;
+    border-bottom-color: transparent;
+    background-color: transparent;
+    margin: auto;
+}
+
+.newsvideo {
+    background-color: black;
+    width: 700px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.modal {
+    background-color: rgba(0, 0,0, 0.7);
+    z-index: 1001;
+    -moz-opacity: 0.7;
+    opacity: .70;
+    filter: alpha(opacity=70);
+}
+
+.newconceptimg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newconcept{
+    position: relative;
+    top: 90px;
+    text-align: center;
+    /*margin-bottom: 200px;*/
+    width:93%;
+}
+
+.a500h{
+     height: 500px;
+}
+
+.a700h{
+     height: 700px;
+}
+
+.a1700h{
+     height: 1700px;
+}
+
+.a900h{
+     height: 900px;
+}
+.a800h{
+     height: 800px;
+}
+
+.a4300h{
+     height: 4300px;
+}
