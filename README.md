@@ -122,3 +122,9 @@ cap shell                 # Begin an interactive Capistrano session.
 ```
 
 rails server -b $IP -p $PORT 
+
+登录
+https://www.szclou.com/users/sign_in
+
+登入后台 /admin
+

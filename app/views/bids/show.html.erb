@@ -10,17 +10,17 @@
             <p class="info">截止日期:无</p>
         <%end%>
         <div class="body" id="productbody"><%= @bid.description.html_safe %></div>
-        <%if @bid.attachment_url != nil%>
-        <% if current_user and current_user.authorized == true %> 
+       <%if @bid.attachment_url != nil%>
+        <!--<% if current_user and current_user.authorized == true %> -->
             <%= link_to "下载附件", @bid.attachment_url, class: "downloadlink" %>
-        <% elsif current_user and current_user.authorized == false %>
-            <p class="downloadlink">您是未授权用户,无法下载</p>
-        <% else %> 
-            <p class="welcomewords">请</p>
-            <a  class="login login-link" href="#" onclick="return false;">登录</a>
-            <p class="welcomewords">后下载</p>
-        <%end%>
-    <%end%>
+        <!--<% elsif current_user and current_user.authorized == false %>-->
+        <!--    <p class="downloadlink">您是未授权用户,无法下载</p>-->
+        <!--<% else %> -->
+        <!--    <p class="welcomewords">请</p>-->
+        <!--    <a  class="login login-link" href="#" onclick="return false;">登录</a>-->
+        <!--    <p class="welcomewords">后下载</p>-->
+        <!--<%end%>-->
+     <%end%>
     </div>
     <br>
     <br>
